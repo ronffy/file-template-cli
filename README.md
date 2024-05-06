@@ -10,9 +10,13 @@ npm i file-template-cli -g
 
 ## Usage
 
-### mode1
+### Mode1
 
-You can run `file-template --input=template --output=src --mapping="__name=h6&__Name=H6"` at the terminal
+You can run commands on the terminal
+
+```shell
+file-template --input=template --output=src --mapping="__name=h6&__Name=H6"
+```
 
 #### terminal options
 
@@ -21,7 +25,7 @@ You can run `file-template --input=template --output=src --mapping="__name=h6&__
 - `-o, --output`(default: `${cwd}/src`) - source file path
 - `-m, --mapping` - mapping data
 
-### mode2
+### Mode2
 
 You can add `template.config.js` or `template.config.json` to the project root directory
 
@@ -43,7 +47,7 @@ Running commands
 file-template
 ```
 
-### mode3
+### Mode3
 
 You can also place template.config.json somewhere else, or change it to another name.
 
@@ -66,13 +70,6 @@ file-template --config=config/template.config.json
 {
   "input": "./template",
   "output": "./src",
-
-  /**
-   * 占位符与命令行输入 key 的映射，区分大小写
-   * {
-   *    ['文件或文件夹名称占位符、文件内容里的占位符']: value
-   * }
-   */
   "mapping": {
     "__name": "h4",
     "__Name": "H4",
