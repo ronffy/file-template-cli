@@ -1,6 +1,6 @@
 {
   "name": "file-template-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "这是一个 cli 命令行工具，让你可以方便的批量处理重复出现的文件或文件夹，使用模板的方式，给文件名或向文件内注入自定义数据",
   "bin": {
     "file-template": "./bin/cli.js"
